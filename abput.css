@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: none;
+}
+
+body {
+    background-color: #FFF4FF;
+}
+
+/* Universal codes */
+h2 {
+    margin-bottom: 20px;
+    font-size: 37px;
+    color: #121212;
+    text-align: center;
+}
+
+h3 {
+    color: #AF83A5;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    color: #121212;
+    margin-bottom: 100px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+/* Universal codes ends here */
+
+
+
+header {
+    height: 80px;
+    width: 100%;
+    padding: 0px 80px;
+    background-color: #FFF4FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid grey;
+}
+
+.logo {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    color: #AF83A5;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.logo span {
+    color: #121212;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #121212;
+    border-radius: 50px;
+    transition: 0.2s;
+    padding: 10px 25px;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+ nav ul li .active {
+    color: #AF83A5;
+ } 
+
+ nav ul li a:hover {
+    color: #AF83A5;
+ }
+
+ nav ul li a:active {
+    color: #dd89c9
+ }
+
+ .nav-icon {
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+ }
+
+ .nav-icon i{
+    margin-left: 20px;
+    padding: 10px;
+    color: #121212;
+    transition: 0.2s ease;
+ }
+
+ .nav-icon i:hover {
+    color: #AF83A5;
+ }
+
+ .nav-icon i:active{
+    color: #dd89c9;
+ }
+
+ @media screen and (max-width: 1200px) {
+    header {
+        padding: 0 30px;
+    }
+
+    nav ul li a {
+        padding: 8px 16px;
+        border-radius: 10px;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    nav ul li a:hover {
+        color: #AF83A5;
+     }
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        padding: 0 10px;
+    }
+
+    nav ul li a:hover {
+        color: #AF83A5;
+     }
+}
+
+@media screen and (max-width: 1000px) {
+    .hamburger {
+        cursor: pointer;
+        display: block;
+    }
+    
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #AF83A5;
+        margin: 6px 0;
+        border-radius: 10px;
+    } 
+    nav {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #FFF4FF;
+        transition: 0.2s;
+        overflow: hidden;
+    } 
+    nav.active {
+        height: 450px;
+    }
+
+    nav ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    nav.active ul{
+        opacity: 1;
+    }
+    nav ul li a {
+        margin-bottom: 12px;
+        padding: 8px 60px;
+    }
+
+    nav ul li a:hover {
+        color: #AF83A5;
+     }
+
+     .logo h1{
+        font-size: 15px;
+     }
+}
+
+.abput {
+    background: #FFF4FF;
+    margin: 0 auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.abput img {
+    width: 500px;
+    height: 500px;
+}
+
+.abput h2 {
+    text-align: left;
+}
+
+.abput p {
+    text-align: left;
+    margin: 0;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 1000px) {
+    .abput {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .abput img {
+        width: 70%;
+        height: auto;
+        margin-left: 14%;
+        margin-bottom: 20px;
+    }
+
+    .abput h2 {
+        text-align: center;
+    }
+
+    .abput p {
+        text-align: center;
+        margin: 0;
+        line-height: 26px;
+        font-size: 16;
+    }
+}

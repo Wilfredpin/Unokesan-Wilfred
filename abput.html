@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unokesan Wilfred</title>
+
+    <link rel="stylesheet" href="abput.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"> <!-- For my Fonts -->
+
+    <script src="https://kit.fontawesome.com/723403ae5d.js" crossorigin="anonymous"></script> <!-- For my Icons-->
+</head>
+<body>
+    <header>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div> <!-- My menu bar in the responsive part. It is not visible in the laptop layout because it only for smaller screens-->
+        </div>
+
+        <div class="logo">
+            <a href="">
+                <h1>
+                    Wilfred<span>.</span>
+                </h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a> <!-- My Navigation Bar -->
+                </li>
+
+                <li>
+                    <a href="">Skills</a>
+                </li>
+
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="abput.html">About Me</a>
+                </li>
+
+                <li>
+                    <a href="">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="nav-icon">
+            <p>|</p>
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </header>
+
+    <section class="abput">
+        <img src="4f9d305d-2a16-4b3a-8ce2-dd18683304c1.jpeg" alt="">
+
+        <div class="text">
+            <h2>
+                About Me
+            </h2>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam accusantium quis iusto amet soluta molestiae at excepturi, reiciendis placeat recusandae, voluptate quo repellendus quae unde quidem architecto, animi mollitia ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officiis error, laboriosam modi culpa iusto ut quasi dolorum reiciendis porro optio amet ratione hic magnam esse eius tempore repellendus cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illum, distinctio magni rerum dolore sed ab dolorum expedita consequatur repudiandae odio quo minus hic. Ut reiciendis architecto nesciunt aspernatur sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente corporis ratione tempore nisi odit recusandae est? Ratione explicabo illo cumque facilis asperiores, sed deleniti nam amet quod quae animi?
+            </p>
+        </div>
+    </section>
+</body>
+
+    <script>
+        hamburger = document.querySelector(".hamburger"); // Identifying the tag in the Javascript 
+        hamburger.onclick = function () {                   // To make the function work but more styling was done in the Css 
+            navBar = document.querySelector("nav"); // Identifying the tag in the Javascript
+            navBar.classList.toggle("active");  // for the hamburger to work in the smaller screen 
+        }
+    </script>
